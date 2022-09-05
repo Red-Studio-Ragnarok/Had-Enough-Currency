@@ -71,7 +71,6 @@ dependencies {
 	if (project.use_mixins.toBoolean()) {
 		deobfCompile 'zone.rong:mixinbooter:5.0'
     }
-	
 }
 
 sourceSets {
@@ -114,4 +113,8 @@ jar {
 		}
         attributes(attribute_map)
     }
+}
+
+runClient {
+	args "--username=Owner"
 }
